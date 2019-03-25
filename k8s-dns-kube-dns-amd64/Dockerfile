@@ -1,2 +1,2 @@
-FROM gcr.io/google_containers/k8s-dns-kube-dns-amd64:1.14.5
+FROM k8s.gcr.io/coredns:1.2.6
 MAINTAINER mritd <piml.lui@gmail.com>
