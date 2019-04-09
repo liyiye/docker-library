@@ -1,10 +1,10 @@
 FROM python:3.6
 
 RUN pip install -i http://pypi.douban.com/simple --trusted-host pypi.douban.com numpy && pip install scrapy && pip install mysql-connector
-RUN apt-get update && apt-get -q -y --force-yes install tesseract-ocr && pip install pytesseract 
+RUN apt-get update && apt-get -q -y --force-yes install tesseract-ocr && pip install pytesseract
 RUN pip uninstall -y  Pillow && pip install Pillow==5.2.0
 RUN pip install baidu-aip
-RUN pip install selenium
+
 
 # install google chrome
 RUN wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | apt-key add -
