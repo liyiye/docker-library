@@ -3,7 +3,7 @@ FROM python:3.6
 RUN pip install -i http://pypi.douban.com/simple --trusted-host pypi.douban.com numpy && pip install scrapy && pip install mysql-connector
 RUN apt-get update && apt-get -q -y --force-yes install tesseract-ocr && pip install pytesseract
 RUN pip uninstall -y  Pillow && pip install Pillow==5.2.0
-RUN pip install baidu-aip
+RUN pip install baidu-aip && pip install py3Fdfs
 
 
 # install google chrome
