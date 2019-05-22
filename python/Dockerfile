@@ -4,6 +4,7 @@ RUN pip install -i http://pypi.douban.com/simple --trusted-host pypi.douban.com 
 RUN apt-get update && apt-get -q -y --force-yes install tesseract-ocr && pip install pytesseract
 RUN pip uninstall -y  Pillow && pip install Pillow==5.2.0
 RUN pip install baidu-aip && pip install py3Fdfs
+RUN pip install redis
 
 
 # install google chrome
